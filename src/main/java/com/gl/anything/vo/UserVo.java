@@ -50,4 +50,11 @@ public class UserVo extends BaseVo {
 		this.birth = birth;
 	}
 
+	public RoleVo getRole() {
+		return role;
+	}
+
+	public void setRole(RoleVo role) {
+		this.role = role;
+	}	
 }
