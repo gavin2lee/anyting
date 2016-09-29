@@ -8,5 +8,28 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd
 		http://www.springframework.org/schema/context 
 		http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				<value>classpath*:anything-env.properties</value>
+				<value>classpath*:mnisqm_remote.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="dataSource" class="org.h2.jdbcx.JdbcConnectionPool"
+		destroy-method="dispose">
+		<constructor-arg>
+			<bean class="org.h2.jdbcx.JdbcDataSource">
+				<property name="URL" value="jdbc:h2:mem:test" />
+				<!-- <property name="URL" value="jdbc:h2:testRestDB" /> -->				 
+				<property name="user" value="sa" />
+				<property name="password" value="sa" />
+			</bean>
+		</constructor-arg>
+	</bean>
 
 </beans>
