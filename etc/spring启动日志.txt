@@ -1,0 +1,14 @@
+十二月 07, 2016 2:15:17 下午 org.apache.catalina.core.ApplicationContext log
+信息: Initializing Spring root WebApplicationContext
+INFO  ContextLoader - Root WebApplicationContext: initialization started
+DEBUG StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+DEBUG StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+DEBUG StandardServletEnvironment - Adding [jndiProperties] PropertySource with lowest search precedence
+DEBUG StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+DEBUG StandardServletEnvironment - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+INFO  XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed Dec 07 14:15:17 CST 2016]; root of context hierarchy
+DEBUG StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+DEBUG StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+DEBUG StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
